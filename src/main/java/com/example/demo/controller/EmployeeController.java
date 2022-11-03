@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,6 +11,11 @@ public class EmployeeController {
 
 	@GetMapping
 	public String getEmployees() {
-		return "Employee API working";
+		return "Employee GET API working";
+	}
+
+	@PostMapping
+	public String addEmployees() {
+		return "Employee POST API working";
 	}
 }
